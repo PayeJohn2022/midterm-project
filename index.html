@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    <meta charset="utf-8"/>
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="login-container">
+
+        <h2>LOGIN</h2>
+        <form onsubmit="logAction(event)">
+            <div class="input-container">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Email" autocomplete="off" required>
+              </div>
+              <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="loginPass" name="loginPass" placeholder="Password" required>
+              </div>
+              <br>
+              <button type="submit">LOGIN</button>
+            </form>
+
+        <p>Don't have an account? <a href="#" onclick="signup()">Register here.</a></p>
+    </div>
+    
+    <!-- Register Form -->
+    <div class="register-container hidden">
+        <h2>REGISTER</h2>
+        
+        <form onsubmit="regAction(event)">
+            <div class="input-container">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" autocomplete="off" required>
+            </div>
+            <div class="input-container">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="signupPass" name="signupPass" placeholder="Password" required>
+            </div>
+            <br>
+            <button type="submit">SIGN UP</button>
+          </form>
+
+        <p>Already have an account? <a href="#" onclick="login()">Login here.</a></p>
+    </div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

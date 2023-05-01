@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(https://i.ibb.co/kQfcXk0/linear-seamless-pattern-with-sweets-png.png);
+	background-color: beige;
+	background-size: cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+
+.login-container{
+	background-color: rgb(201, 173, 127);
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px; 
+}
+
+.register-container{
+	background-color: rgb(166, 124, 91);
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	opacity: 0.9;
+}
+
+.login-container h2 {
+	margin-top: 0;
+	text-align: center;
+}
+
+.login-container form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login-container label {
+	margin-top: 10px;
+}
+
+.login-container input {
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.login-container button {
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #023020;
+	color: white;
+	cursor: pointer;
+}
+
+.login-container button:hover {
+	background-color: orange;
+}
+
+.register-container h2 {
+	margin-top: 0;
+	text-align: center;
+}
+
+.register-container form {
+	display: flex;
+	flex-direction: column;
+}
+
+.register-container label {
+	margin-top: 10px;
+}
+
+.register-container input {
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.register-container button {
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: #023020;
+	color: white;
+	cursor: pointer;
+}
+
+.register-container button:hover {
+	background-color: orange;
+}
+
+.hidden {
+	display: none;
+}
+
+.input-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.input-container i {
+	margin-right: 10px;
+	color: #023020;
+}
+
+
