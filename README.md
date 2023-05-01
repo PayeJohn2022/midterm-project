@@ -1,2 +1,2 @@
 # testing-repos
-Naa sa master branch na link ang akoang mga files
+Naa sa master branch ang akoang mga uploaded files
