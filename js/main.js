@@ -11,39 +11,34 @@ function login() {
 }
 
 // Register Form
-function regAction(e) {
+function addData(e) {
     e.preventDefault();
     const email = document.getElementById('signupEmail').value;
     const pass = document.getElementById('signupPass').value;
-  
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passMinLength = 8;
 
-    if (email == "admin@gmail.com" && pass == "admin"){
-        window.alert("Successfully Registered!");
-    } else if (!emailRegex.test(email)) {
+    if (email !== "admin@gmail.com") {
         window.alert("Invalid email format!");
-      return;
-    } else if (pass.length < passMinLength) {
-        window.alert(`Password must be at least ${passMinLength} characters long!`);
         return;
-    } else {
-        window.alert("Successfully registered!");
-        document.querySelector('.register-container').classList.add('hidden');
-        document.querySelector('.login-container').classList.remove('hidden');
     }
-  } 
+    if (pass !== "admin") {
+        window.alert(`Password must be at least 8 characters long!`);
+        return;
+    }
+    window.alert("Successfully registered!");
+    window.location.href = "#";
+}
+
 
 // Login Form
-function logAction(e){
+function checkData(e){
     e.preventDefault();
     const enterEmail = document.getElementById('loginEmail').value;
     const enterPass = document.getElementById('loginPass').value;
 
-    if (enterEmail === "admin@gmail.com" && enterPass === "admin1234") {
-            window.alert("Login successful!");
-            window.location.href = "home.html"; 
-        } else {
-            window.alert("Invalid username or password!");
-        }
+    if (enterEmail === "admin@gmail.com" && enterPass === "admin") {
+        window.alert("Login successful!");
+        window.location.href = "home.html"; 
+    } else {
+        window.alert("Invalid username or password!");
+    }
 }
